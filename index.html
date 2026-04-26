@@ -3,187 +3,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="P.H.U Cytrusek - profesjonalne obieranie warzyw Kielce oraz hurtownia topowych warzyw i owoców. Zaopatrujemy gastronomię, gwarantujemy świeżość i darmową dostawę.">
-    <title>Cytrusek Kielce | Obieranie Warzyw i Hurtownia Owoców</title>
-    
-    <!-- Google Fonts: Poppins & Playfair Display -->
+
+    <!-- SEO: Title & Description -->
+    <title>Cytrusek Kielce | Obieranie Warzyw, Pakowanie Hermetyczne, Hurtownia Owoców</title>
+    <meta name="description" content="P.H.U. Cytrusek Kielce – obieranie warzyw (ziemniaki, marchew, buraki, seler), pakowanie hermetyczne próżniowe. Hurtownia owoców i warzyw ul. Górna 25. Dostawy dla szkół, szpitali, hoteli, gastronomii. Codziennie świeże produkty od ponad 20 lat!">
+    <meta name="keywords" content="obieranie warzyw Kielce, obieranie ziemniakow Kielce, pakowanie hermetyczne warzywa, hurtownia warzyw Kielce, warzywa dla gastronomii Kielce, dostawa warzyw Kielce, Cytrusek Kielce Górna 25">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="P.H.U. Cytrusek Kielce">
+    <link rel="canonical" href="https://cytrusek.pl/">
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cytrusek Kielce | Obieranie Warzyw i Hurtownia Owoców">
+    <meta property="og:description" content="Profesjonalne obieranie warzyw, pakowanie próżniowe i hurtownia owoców. Kielce, ul. Górna 25. Działamy od ponad 20 lat!">
+    <meta property="og:image" content="images/blue_building.jpg">
+    <meta property="og:url" content="https://cytrusek.pl/">
+    <meta property="og:locale" content="pl_PL">
+
+    <!-- Structured Data: LocalBusiness (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "P.H.U. Cytrusek",
+      "description": "Profesjonalne obieranie warzyw, pakowanie hermetyczne i hurtownia owoców i warzyw w Kielcach.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Górna 25",
+        "addressLocality": "Kielce",
+        "postalCode": "25-001",
+        "addressCountry": "PL"
+      },
+      "openingHours": "Mo-Sa 08:00-12:00",
+      "priceRange": "$$",
+      "areaServed": "Kielce i okolice",
+      "knowsAbout": ["obieranie warzyw", "pakowanie hermetyczne", "hurtownia owoców i warzyw"]
+    }
+    </script>
+
+    <!-- Google Fonts: Inter & Playfair Display -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Boxicons for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
+    <!-- 1. NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container container">
             <a href="#" class="logo">
-                <i class='bx bx-lemon'></i>
-                <span>Cytrusek</span>
+                <div class="logo-circle">
+                    <img src="images/logo_ai.jpg" alt="Cytrusek – logo owoce i warzywa" class="logo-img">
+                </div>
+                <span class="logo-name">Cytrusek</span>
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#hero">Start</a></li>
-                <li><a href="#about">O nas</a></li>
-                <li><a href="#services">Obieranie i Usługi</a></li>
-                <li><a href="#quality">Jakość</a></li>
-                <li><a href="#contact" class="btn-nav">Kontakt</a></li>
+                <li><a href="#about">O firmie</a></li>
+                <li><a href="#services">Usługi</a></li>
+                <li><a href="#clients">Dla kogo</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact" class="btn-nav">Zadzwoń</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <i class='bx bx-menu'></i>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <header class="hero" id="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <span class="hero-subtitle">Twój sprawdzony dostawca w regionie</span>
-            <h1 class="hero-title">Obieranie Warzyw <span>Kielce</span> i Hurtownia Premium</h1>
-            <p class="hero-text">Najwyższej jakości warzywa i owoce dla Twojej restauracji. Specjalizujemy się w profesjonalnym obieraniu ziemniaków i warzyw korzeniowych. Oszczędź czas – my obierzemy i dowieziemy!</p>
+            <span class="hero-subtitle">Solidność · Czystość · Jakość</span>
+            <h1 class="hero-title">Profesjonalne obieranie i<br>pakowanie hermetyczne – <span>Kielce</span></h1>
+            <p class="hero-text">Od ponad 20 lat codziennie (oprócz niedziel) dostarczamy <strong>świeże owoce i warzywa</strong>. Specjalizujemy się w profesjonalnym obieraniu warzyw oraz pakowaniu hermetycznym dla szkół, szpitali, firm, hoteli i gastronomii.<br><small>Osoby prywatne prosimy o zamówienie dzień wcześniej.</small></p>
             <div class="hero-buttons">
-                <a href="#services" class="btn btn-primary">Poznaj ofertę</a>
-                <a href="#contact" class="btn btn-outline">Zamów dostawę</a>
+                <a href="tel:+48123456789" class="btn btn-primary"><i class='bx bxs-phone-call'></i> Zadzwoń teraz</a>
+                <a href="#services" class="btn btn-outline">Zobacz usługi</a>
             </div>
         </div>
     </header>
 
-    <!-- About Section -->
+    <!-- STATS BAR -->
+    <section class="stats-bar">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">lat doświadczenia</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">6 dni</span>
+                <span class="stat-label">w tygodniu dostawy</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">świeżych produktów</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">B2B</span>
+                <span class="stat-label">szkoły, szpitale, hotele</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. O FIRMIE -->
     <section class="about section" id="about">
         <div class="container about-grid">
-            <div class="about-image">
-                <!-- User's building picture placeholder or premium vegetables -->
-                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800" alt="Świeże warzywa w hurtowni Cytrusek" class="img-main">
-                <div class="experience-badge">
-                    <span class="number">100%</span>
-                    <span class="text">Świeżości każdego dnia</span>
-                </div>
-            </div>
             <div class="about-text">
-                <h2 class="section-title">Hurtownia, której <span>możesz zaufać</span></h2>
-                <p>W <strong>P.H.U "CYTRUSEK" Katarzyna Rzędowska</strong> stawiamy na bezkompromisową jakość. Jesteśmy znaną i cenioną na kieleckim rynku hurtownią, z której codziennie korzystają dziesiątki klientów.</p>
-                <p>Oferujemy pełen asortyment topowych warzyw i owoców. Ręczymy za nasz towar – każdego dnia dbamy o to, by trafiały do Ciebie wyłącznie najświeższe produkty. Zero kompromisów, zero strat.</p>
+                <span class="section-subtitle">Twój lokalny dostawca</span>
+                <h2 class="section-title">Doświadczenie i <span>higiena pracy</span></h2>
+                <p>Od ponad 20 lat zajmujemy się handlem owocami i warzywami, codziennie (oprócz niedziel) dostarczając wyłącznie świeże produkty. Jesteśmy sprawdzonym, lokalnym partnerem dla gastronomii w Kielcach i okolicach.</p>
+                <p>Obecnie naszą kluczową usługą jest <strong>profesjonalne obieranie warzyw i pakowanie hermetyczne (próżniowe)</strong>. Dzięki rygorystycznym standardom higieny i nowoczesnym maszynom, dostarczamy warzywa gotowe do gotowania – czyste, obrane i szczelnie zapakowane.</p>
+
+                <h3 class="subsection-title">Dlaczego warto z nami współpracować?</h3>
                 <ul class="about-features">
-                    <li><i class='bx bx-check-circle'></i> Codzienne, świeże dostawy</li>
-                    <li><i class='bx bx-check-circle'></i> Bogaty asortyment z całego świata i od lokalnych rolników</li>
-                    <li><i class='bx bx-check-circle'></i> Profesjonalna obsługa gastronomii (HoReCa)</li>
+                    <li>
+                        <div class="feature-icon"><i class='bx bx-time-five'></i></div>
+                        <div>
+                            <h4>Oszczędność czasu</h4>
+                            <p>Gotowe do użycia warzywa odciążają Twój personel. Zero strat, zero czasu na obieranie.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon"><i class='bx bx-check-shield'></i></div>
+                        <div>
+                            <h4>Stała jakość i higiena</h4>
+                            <p>Zawsze ten sam, wysoki standard obierania i pakowania hermetycznego.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon"><i class='bx bx-leaf'></i></div>
+                        <div>
+                            <h4>Świeżość produktów</h4>
+                            <p>Codziennie wyselekcjonowane warzywa i owoce od pewnych, lokalnych dostawców.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon"><i class='bx bx-git-compare'></i></div>
+                        <div>
+                            <h4>Elastyczność</h4>
+                            <p>Dostosowujemy wolumen i harmonogram dostaw do Twoich aktualnych potrzeb.</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- Services Section (Focus on Peeling) -->
-    <section class="services section bg-light" id="services">
-        <div class="container text-center">
-            <span class="section-subtitle">Nasza Oferta</span>
-            <h2 class="section-title">Usługi dla Gastronomii</h2>
-            <p class="section-desc">Specjalizujemy się w rozwiązaniach, które oszczędzają Twój czas i pieniądze w kuchni.</p>
-            
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card highlight">
-                    <div class="service-icon"><i class='bx bx-restaurant'></i></div>
-                    <h3>Obieranie Warzyw Kielce</h3>
-                    <p>Nasza flagowa usługa! Profesjonalnie obieramy ziemniaki, marchew, buraki i inne warzywa. Pakowane próżniowo, gotowe od razu do wrzucenia do garnka. Ogromna oszczędność pracy Twojego zespołu.</p>
-                </div>
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class='bx bx-basket'></i></div>
-                    <h3>Hurtownia Warzyw i Owoców</h3>
-                    <p>Pełen asortyment świeżych produktów premium. Od podstawowych warzyw po egzotyczne owoce. Zawsze najwyższa jakość, rygorystycznie selekcjonowana przed sprzedażą.</p>
-                </div>
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class='bx bx-truck'></i></div>
-                    <h3>Darmowa Dostawa</h3>
-                    <p>Złóż zamówienie, a my dostarczymy towar bezpośrednio do Twojej restauracji, stołówki czy hotelu w Kielcach i okolicach. Punktualnie i bezpiecznie.</p>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&q=80&w=800" alt="Piękne, świeże owoce i warzywa – Cytrusek Kielce" class="img-main">
+                <div class="experience-badge">
+                    <span class="number">20+</span>
+                    <span class="text">Lat na rynku</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call To Action -->
-    <section class="cta section">
-        <div class="cta-overlay"></div>
-        <div class="container cta-content">
-            <h2>Prowadzisz restaurację? Potrzebujesz obranych ziemniaków?</h2>
-            <p>Zadzwoń do nas już teraz i zapytaj o specjalny cennik dla nowych klientów B2B!</p>
-            <a href="tel:+48123456789" class="btn btn-primary btn-large"><i class='bx bxs-phone-call'></i> Skontaktuj się z nami</a>
+    <!-- 3. USŁUGI -->
+    <section class="services section bg-light" id="services">
+        <div class="container text-center">
+            <span class="section-subtitle">Co robimy?</span>
+            <h2 class="section-title">Nasze Usługi</h2>
+            <p class="section-desc">Kompleksowe przygotowanie warzyw i owoców dla Twojego biznesu.</p>
+
+            <div class="services-grid">
+                <!-- Usługa A: Obieranie warzyw -->
+                <div class="service-card highlight">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&q=80&w=600" alt="Obieranie ziemniaków i warzyw" class="service-img">
+                    </div>
+                    <div class="service-icon"><i class='bx bxs-leaf'></i></div>
+                    <h3>Obieranie warzyw</h3>
+                    <p>Profesjonalne obieranie <strong>ziemniaków, marchewki, buraków, selera, pietruszki, cebuli, porów, kalafiora</strong> i wielu innych warzyw. Dokładnie myte, obierane i przygotowywane dla gastronomii.</p>
+                </div>
+                <!-- Usługa B: Pakowanie hermetyczne -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1588610190132-15949a8de4db?auto=format&fit=crop&q=80&w=600" alt="Pakowanie hermetyczne próżniowe warzyw" class="service-img">
+                    </div>
+                    <div class="service-icon"><i class='bx bx-package'></i></div>
+                    <h3>Pakowanie hermetyczne</h3>
+                    <p>Obrane produkty natychmiast <strong>pakujemy próżniowo (hermetycznie)</strong>, zachowując pełnię smaku i świeżości. Dostarczamy gotowe do gotowania porcje do szkół, szpitali, hoteli i firm.</p>
+                </div>
+                <!-- Usługa C: Hurtownia -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=600" alt="Hurtownia owoców i warzyw Kielce" class="service-img">
+                    </div>
+                    <div class="service-icon"><i class='bx bx-store-alt'></i></div>
+                    <h3>Hurtownia owoców i warzyw</h3>
+                    <p>Codziennie (oprócz niedziel) <strong>dostawa świeżych owoców i warzyw</strong> prosto z giełdy. Zawsze sezonowe, zawsze świeże – jabłka, pomarańcze, banany, truskawki, pomidory, ogórki i wiele więcej.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact section" id="contact">
+    <!-- 4. DLA KOGO -->
+    <section class="clients section" id="clients">
+        <div class="container text-center">
+            <span class="section-subtitle">Odbiorcy B2B i indywidualni</span>
+            <h2 class="section-title">Kogo <span>Obsługujemy?</span></h2>
+
+            <div class="clients-grid">
+                <div class="client-card">
+                    <i class='bx bxs-school'></i>
+                    <h4>Szkoły i Przedszkola</h4>
+                    <p>Zdrowe, obrane i hermetycznie zapakowane warzywa spełniające rygorystyczne normy żywieniowe.</p>
+                </div>
+                <div class="client-card">
+                    <i class='bx bx-plus-medical'></i>
+                    <h4>Szpitale</h4>
+                    <p>Bezwzględna higiena, pakowanie próżniowe i terminowość – kluczowe dla placówek medycznych.</p>
+                </div>
+                <div class="client-card">
+                    <i class='bx bx-restaurant'></i>
+                    <h4>Restauracje i Gastronomia</h4>
+                    <p>Oszczędzamy czas kucharzy, dostarczając gotowe bazy do zup, sosów i dań głównych.</p>
+                </div>
+                <div class="client-card">
+                    <i class='bx bx-hotel'></i>
+                    <h4>Hotele i Domy weselne</h4>
+                    <p>Duże wolumeny świeżo obranych produktów na każdą imprezę z gwarancją terminowości.</p>
+                </div>
+                <div class="client-card">
+                    <i class='bx bx-briefcase-alt-2'></i>
+                    <h4>Firmy cateringowe</h4>
+                    <p>Niezawodne zaopatrzenie dla masowej produkcji posiłków i diet pudełkowych.</p>
+                </div>
+                <div class="client-card">
+                    <i class='bx bx-user'></i>
+                    <h4>Klienci prywatni</h4>
+                    <p>Osoby prywatne mile widziane – prosimy o <strong>zamówienie dzień wcześniej</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PROCES WSPÓŁPRACY -->
+    <section class="process section bg-light" id="process">
+        <div class="container text-center">
+            <span class="section-subtitle">Krok po kroku</span>
+            <h2 class="section-title">Jak to działa?</h2>
+
+            <div class="process-wrapper">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Kontakt</h4>
+                    <p>Dzwonisz lub piszesz do nas. Wstępnie omawiamy Twoje zapotrzebowanie.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Ustalenie zamówienia</h4>
+                    <p>Dopasowujemy asortyment, gramaturę i harmonogram dostaw.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Przygotowanie</h4>
+                    <p>Myjemy, profesjonalnie obieramy i hermetycznie pakujemy warzywa.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Dostawa</h4>
+                    <p>Towar trafia do Twojej kuchni. Punktualnie i bez komplikacji.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. GALERIA -->
+    <section class="gallery section" id="gallery">
+        <div class="container text-center">
+            <span class="section-subtitle">Nasz zakład</span>
+            <h2 class="section-title">Zobacz jak pracujemy</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&q=80&w=600" alt="Obrane ziemniaki">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&q=80&w=600" alt="Marchew i warzywa korzeniowe">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=600" alt="Piękne świeże owoce i warzywa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 9. KONTAKT -->
+    <section class="contact section bg-light" id="contact">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-subtitle">Kontakt</span>
-                    <h2 class="section-title">Gdzie nas znaleźć?</h2>
-                    <p>Hurtownia "Cytrusek" zaprasza klientów hurtowych i detalicznych. Chętnie nawiążemy stałą współpracę z lokalną gastronomią.</p>
-                    
-                    <div class="info-item">
-                        <i class='bx bx-map'></i>
-                        <div>
-                            <h4>Adres</h4>
-                            <p>ul. Przykładowa 12, 25-001 Kielce<br>P.H.U "CYTRUSEK" Katarzyna Rzędowska</p>
-                        </div>
-                    </div>
+            <div class="contact-full">
+                <span class="section-subtitle">Kielce i okolice</span>
+                <h2 class="section-title">Skontaktuj się z <span>nami</span></h2>
+                <p style="margin-bottom: 40px; color: var(--text-light); font-size:1.1rem;">Dzięki temu zapewniamy najwyższą świeżość produktów i błyskawiczny kontakt. Jesteśmy blisko Ciebie!</p>
+
+                <div class="contact-info-grid">
                     <div class="info-item">
                         <i class='bx bx-phone'></i>
                         <div>
-                            <h4>Telefon</h4>
-                            <p><a href="tel:+48123456789">+48 123 456 789</a></p>
+                            <h4>Zadzwoń</h4>
+                            <p><a href="tel:+48123456789" class="phone-big">+48 123 456 789</a></p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class='bx bx-envelope'></i>
                         <div>
-                            <h4>Email</h4>
+                            <h4>E-mail</h4>
                             <p><a href="mailto:kontakt@cytrusek.kielce.pl">kontakt@cytrusek.kielce.pl</a></p>
                         </div>
                     </div>
+                    <div class="info-item">
+                        <i class='bx bx-time'></i>
+                        <div>
+                            <h4>Godziny pracy</h4>
+                            <p>Pon – Sob: 08:00 – 12:00<br><strong>Niedziela: zamknięte</strong></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class='bx bx-map'></i>
+                        <div>
+                            <h4>Adres</h4>
+                            <p>ul. Górna 25<br>25-001 Kielce</p>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <h3>Napisz do nas</h3>
-                        <div class="form-group">
-                            <input type="text" placeholder="Twoje Imię / Nazwa Firmy" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Twój Numer Telefonu" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="4" placeholder="Jak możemy pomóc? (np. interesuje mnie dostawa 100kg obranych ziemniaków tygodniowo)" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Wyślij zapytanie <i class='bx bx-send'></i></button>
-                    </form>
+
+                <!-- Zdjęcie budynku -->
+                <div class="building-photo">
+                    <img src="images/blue_building.jpg" alt="Siedziba firmy P.H.U. Cytrusek – niebieski budynek w Kielcach" style="border-radius:16px; box-shadow: var(--shadow); max-height:420px; object-fit:cover;">
+                    <p class="building-caption">Nasza siedziba – P.H.U. Cytrusek, Kielce</p>
                 </div>
+
+                <!-- Mapa -->
+                <iframe src="https://maps.google.com/maps?q=Kielce&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0; border-radius:16px; margin-top:30px; box-shadow: var(--shadow);" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- STOPKA -->
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">
-                <a href="#">
-                    <i class='bx bx-lemon'></i>
-                    <span>Cytrusek</span>
+                <a href="#" class="logo">
+                    <div class="logo-circle">
+                        <img src="images/logo_ai.jpg" alt="Cytrusek Logo" class="logo-img">
+                    </div>
+                    <span class="logo-name">Cytrusek</span>
                 </a>
-                <p>Topowe warzywa i owoce. Profesjonalne obieranie warzyw dla gastronomii w Kielcach.</p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/p/Cytrusek-Kielce-warzywa-owoce-100067378821402/" target="_blank"><i class='bx bxl-facebook'></i></a>
-                </div>
+                <p>Profesjonalne obieranie warzyw i pakowanie hermetyczne.<br>Hurtownia owoców i warzyw – Kielce, ul. Górna 25.</p>
             </div>
             <div class="footer-links">
-                <p>&copy; 2026 P.H.U "CYTRUSEK" Katarzyna Rzędowska. Wszelkie prawa zastrzeżone.</p>
-                <p>Projekt i wykonanie: <a href="#">Twoja Agencja / Developer</a></p>
+                <p>&copy; 2026 P.H.U &ldquo;CYTRUSEK&rdquo; – Kielce, ul. Górna 25. Wszelkie prawa zastrzeżone.</p>
+                <p class="footer-credit">Strona zaprojektowana i wykonana przez
+                    <a href="https://krzysztofw.pl" target="_blank" rel="noopener" class="credit-link">Krzysztof Wiater</a>
+                </p>
             </div>
         </div>
     </footer>
